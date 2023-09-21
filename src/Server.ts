@@ -5,7 +5,7 @@ export class Server {
   public startServer() {
     createServer((req: IncomingMessage, res: ServerResponse) => {
       console.log(`Request header: ${req.headers}`);
-      res.write("Hello from TS server!");
+      res.write("Hello from TypeScript server!");
       res.end();
     }).listen(8080);
     console.log("Started server");
